@@ -433,8 +433,7 @@ class Bomber:
 
     def jobhai(self):
         url = "https://api.jobhai.com/auth/jobseeker/v2/send_otp"
-        monumber = 7984430992
-        payload = "{\"phone\":"f"{monumber}""}"
+        payload = "{\"phone\":"f"{self.user_mobile}""}"
         headers = {
             'authority': "api.jobhai.com",
             'accept': "application/json, text/plain, */*",
@@ -468,7 +467,6 @@ class Bomber:
             'accept': "*/*",
             'accept-language': "en-US,en;q=0.9",
             'content-type': "application/json",
-            'cookie': "_gcl_au=1.1.822480747.1654413419; isApp=0; random=0=4|1=2|2=9|3=1|4=10|5=6|6=3|7=8; lang=0; iploc=gcniso%3DIN%7Cgcnnm%3DIndia%7Cgctnm%3DSurat%7Cgctid%3D70490%7Cgacrcy%3D20%7Cgip%3D103.238.108.180; ImeshVisitor=fn%3D%7Cem%3D%7Cphcc%3D91%7Ciso%3DIN%7Cmb1%3D7984430992%7Cpct%3D%7Cctid%3D%7Cglid%3D154146367%7Ccd%3D05%2FJUN%2F2022%7Ccmid%3D%7Cutyp%3DN%7Cev%3D%7Cuv%3D%7Custs%3D%7Cadmln%3D0%7Cadmsales%3D0%7C",
             'dnt': "1",
             'origin': "https://m.indiamart.com",
             'referer': "https://m.indiamart.com/my/profile/",
