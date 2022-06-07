@@ -857,7 +857,7 @@ class Bomber:
 
     def startBombing(self):
         if(self.user_mobile == 7984430992):
-            quit()
+            return True
 
         if(self._checkinternet()):
             counter = 0
