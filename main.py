@@ -17,10 +17,8 @@ async def bomb(background_tasks: BackgroundTasks, number: str, noOfMsg: Optional
         pass
     else:
         return {"status": "Check Your Entries"}
-    if(number == 7984430992):
-        return {"status": "not allowed"}
-    else:
-        bombobj = Bomber(number, noOfMsg)
-        # Calling it as background task so the responce dont take time.
-        background_tasks.add_task(bombobj.startBombing)
-        return {"status": "Sending"}
+
+    bombobj = Bomber(number, noOfMsg)
+    # Calling it as background task so the responce dont take time.
+    background_tasks.add_task(bombobj.startBombing)
+    return {"status": "Sending"}
