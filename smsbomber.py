@@ -598,7 +598,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "cross-site",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'utm_campaign': "Web_TopNavOS_ApplyNow",
             'utm_id': "TopNavOS_ApplyNow",
             'utm_medium': "TopNavOS_Apply_Now",
@@ -656,7 +656,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-site",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'x-kb-info': "eyJkaWQiOiIiLCJhcHB0eXBlIjoid2ViIiwiYXBwdmVyIjoiIn0="
         }
         try:
@@ -712,7 +712,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "cross-site",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'x-api-version': "3.1",
             'x-client-type': "Web"
         }
@@ -870,7 +870,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-origin",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'x-requested-with': "XMLHttpRequest"
         }
         try:
@@ -896,7 +896,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-origin",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'x-requested-with': "XMLHttpRequest"
         }
         try:
@@ -922,7 +922,7 @@ class Bomber:
             'Sec-Fetch-Dest': "empty",
             'Sec-Fetch-Mode': "cors",
             'Sec-Fetch-Site': "same-site",
-            'User-Agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'accept': "application/json",
             'bbversion': "v2",
             'clientSessionId': "1662729304519",
@@ -1006,7 +1006,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-site",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'x-device-details': "platform=WEB|osName=Android/6.0|osVersion=Edge/102.0.1245.33|appVersion=4.0.0|modelName=Edge|manufacturer=LG"
         }
         try:
@@ -1034,7 +1034,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-site",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'whjr-amplitude-sessionid': "0",
             'whjr-segment-anonymousid': "ae055dcb-75c3-4be6-ae6b-2bacc6bf4ec2"
         }
@@ -1063,7 +1063,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-site",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'whjr-amplitude-sessionid': "0",
             'whjr-segment-anonymousid': "ae055dcb-75c3-4be6-ae6b-2bacc6bf4ec2"
         }
@@ -1153,7 +1153,7 @@ class Bomber:
         url = "https://apiservices.askapollo.com/api/AskApolloWeb/SendOTPForVerificationv2"
         payload = "{\"lstEmails\":[],\"lstMobiles\":["f'"{self.user_mobile}"'"],\"skipCaptcha\":true,\"leadSource\":\"Angular-PhysicalAppointment-Login\"}"
         headers = {
-            'User-Agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'Content-Type': "application/json",
             'Accept': "application/json, text/plain, */*",
             'xauthtoken': "AAWEBLIVE-29SUBFEIBP8CXGGJOJ7W",
@@ -1180,7 +1180,7 @@ class Bomber:
             'Sec-Fetch-Dest': "empty",
             'Sec-Fetch-Mode': "cors",
             'Sec-Fetch-Site': "same-site",
-            'User-Agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'content-type': "application/json",
         }
         try:
@@ -1206,7 +1206,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-origin",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'x-requested-with': "XMLHttpRequest"
         }
         try:
@@ -1282,7 +1282,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-origin",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'x-requested-with': "XMLHttpRequest"
         }
         try:
@@ -1311,7 +1311,7 @@ class Bomber:
             'sec-fetch-dest': "empty",
             'sec-fetch-mode': "cors",
             'sec-fetch-site': "same-site",
-            'user-agent': "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 Edg/102.0.1245.33",
+            "user-agent": self.getUserAgent(),
             'whjr-amplitude-sessionid': "0",
             'whjr-segment-anonymousid': "ae055dcb-75c3-4be6-ae6b-2bacc6bf4ec2"
         }
